@@ -9,6 +9,7 @@ $spesa = [
     "Caffé",    
     "Dentifricio",   
     "Frutta",
+    "Salumi",
     "Mozzarella"
 ];
 
