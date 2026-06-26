@@ -10,6 +10,7 @@ switch ($voto) {
         break;
 
     case 6:
+        echo "Voto Minimo";
     case 7:
     case 8:
     case 9:
