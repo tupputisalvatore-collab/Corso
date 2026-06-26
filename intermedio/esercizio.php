@@ -7,7 +7,7 @@ switch ($voto) {
     case 4:
     case 5:
         echo "Bocciato";
-        break;
+    break;
 
     case 6:
         echo "Voto Minimo";
@@ -16,5 +16,5 @@ switch ($voto) {
     case 9:
     case 10:
         echo "Promosso";
-        break;
+    break;
 }
