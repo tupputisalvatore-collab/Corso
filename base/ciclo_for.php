@@ -1,4 +1,10 @@
 <?php
+/*
+    for(condizione){
+    codice
+    }
+    
+    */
 $studenti = [
     "Francesco", // 0
     "Luana",     // 1
@@ -12,10 +18,10 @@ $studenti = [
     "Luca"
 ];
 
-// Operatori +; -; /; *;
+// Operatori +; -; /; *
 // $i = $i + 1
 $totaleStudenti = count($studenti);
 
- for($i = 0; $i < $totaleStudenti; $i++){
-        echo "<li>Studente in posizione" . $i . ":" . $studenti[$i] . "<br> </li>";
-    }
+for ($i = 0; $i < $totaleStudenti; $i++) {
+    echo "<li>Studente in posizione " . $i . ": " . $studenti[$i] . "</li>";
+}

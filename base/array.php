@@ -2,7 +2,7 @@
 $studenti = [
     "Francesco", // 0
     "Luana",     // 1
-    "Annalisa",  // 2
+    "Analisa",   // 2
     "Marco",     // 3
     "Paolo",     // 4
     "Davide",    // 5
@@ -18,22 +18,28 @@ echo "Il numero totale degli studenti sono = " . $totaleStudenti . "<br>";
 
 // Stampo l'ultimo elemento della tabella(array o lista) studenti
 echo "L\'utimo studente è " . $studenti[7] . "<br>";
-echo "Lo studente numero 5 è " . $studenti[5];
+
+echo "Lo studente numero 5 lista è " . $studenti[5] . "<br>";
 echo "<hr>";
-//--------------
-// Aggiungere un elemento (studente)
-//--------------
+
+// ==================================
+// Aggiungere un/o elemento(studente) 
+// ==================================
+
 $studenti[] = "Fabio";
-echo "<b>Aggiunta</b> Abbiamo aggiunto uno studente<br>" ;
-echo "Ora l\'ultimo studente è " . $studenti[8] . "<br>";
+// array_push($studenti, "Diana");
 
-echo "Il numero totale degli studenti sono = " . count($studenti) . "<br>";
+echo "<b>AGGIUNTA</b> Abbiamo aggiunto uno studente<br>";
+echo "Ora l\'utimo studente è " . $studenti[8] . "<br>";
+
+// Numero totale degli studenti
+echo "Nuovo totale studenti: " . count($studenti) . "<br>";
+
 echo "<hr>";
 
 // ==================================
-// Modifica dello studente
+// Modificazione dello studente 
 // ==================================
-
 $studenti[2] = "Giovanni";
 $studenti[4] = "Luca";
 
@@ -43,11 +49,13 @@ echo "<br>Ora lo studente all\'indice 4 è diventato: " . $studenti[4] . "<br>";
 
 
 
+
+
 // ==================================
 // Eliminare un/o elemento(studente) 
 // ==================================
 
-// Voglio eliminare "Annalisa" che si trova all'indice 2.
+// Vogli eliminare "Analisa" che si trova all'indice 2.
 // Usiamo (array_splice) cosi gli studenti scalano indietro e gli indici si riordinano
 echo "Stampo il nome dello studente " . $studenti[2] . "<br>";
 echo "<b>[ELIMINAZIONE]</b> Abbiamo tolto uno studente con l'indice 2 " . $studenti[2] . "<br>";
@@ -57,5 +65,3 @@ echo "Nuovo totale studenti: " . count($studenti) . "<br>";
 echo "<br>";
 echo "<hr>";
 echo "<br>";
-
-?>
